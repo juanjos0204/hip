@@ -34,6 +34,7 @@ public class InterfazHip extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         Archivo = new javax.swing.JMenu();
         Boton_Exit = new javax.swing.JMenuItem();
@@ -57,6 +58,8 @@ public class InterfazHip extends javax.swing.JFrame {
         setTitle("MENÚ PRINCIPAL");
 
         jLabel1.setText("Por favor ingrese a Ver Modulos para seleccionar una operación");
+
+        jLabel2.setText("usted es un sopenco");
 
         Archivo.setText("Archivo");
         Archivo.addActionListener(new java.awt.event.ActionListener() {
@@ -109,8 +112,13 @@ public class InterfazHip extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(133, 133, 133)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(133, 133, 133)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(227, 227, 227)
+                        .addComponent(jLabel2)))
                 .addContainerGap(139, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -118,7 +126,9 @@ public class InterfazHip extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(91, 91, 91)
                 .addComponent(jLabel1)
-                .addContainerGap(174, Short.MAX_VALUE))
+                .addGap(34, 34, 34)
+                .addComponent(jLabel2)
+                .addContainerGap(126, Short.MAX_VALUE))
         );
 
         pack();
@@ -186,6 +196,7 @@ System.exit(0);
     private javax.swing.JMenu Modulos;
     private javax.swing.JMenu Ver_Acerca;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
