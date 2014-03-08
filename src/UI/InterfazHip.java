@@ -59,7 +59,7 @@ public class InterfazHip extends javax.swing.JFrame {
 
         jLabel1.setText("Por favor ingrese a Ver Modulos para seleccionar una operación");
 
-        jLabel2.setText("usted es un sopenco");
+        jLabel2.setText("Usted es muy inteligente ");
 
         Archivo.setText("Archivo");
         Archivo.addActionListener(new java.awt.event.ActionListener() {
